@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*css*/
+		#page-container {
+				width: 760px;
+				margin: auto;
+				background: red;
+			}
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		#main-nav {
+			width: 760px;
+
+			background: red;
+			height: 50px;
+		}
+	    #header {
+			width: 760px;
+			/*background: blue;*/
+			height: 150px;
+			/*background: #db6d16*/
+			background : url(./headers/header.jpg) no-repeat;
+	
+		}
+		#sidebar-a {
+			float: right;
+			width: 280px;
+		    /*background: darkgreen;*/
+		}
+		#content {
+			width: 480px;
+			margin-right: 280px;
+			/*background: green;*/
+		}
+		#footer {
+			clear: both;
+			/*background: orange;*/
+			height: 66px;
+			font-family: Tahoma, Arial, Helvetica,Sans-serif;
+			font-size: 10px;
+			color: #c9c9c9;
+			border-top: 1px solid #efefef;
+			padding: 13px 25px;
+			line-height: 18px;
+		} 
+		#footer a {
+            color: #c9c9c9;
+            text-decoration: none;
+		}
+		#footer a:hover{
+			color: #db6d16;
+		}
+		#footer #altnav {
+			width: 350px;
+			float: right;
+			text-align: right;
+		}
+		#main-nav ul {
+			display: none;
+		}
+		h1 {
+			margin: 0;
+			padding: 0;
+			float: right;
+			margin-top: 57px;
+			padding-right: 31px;
+		} 
+		#content h2,p {
+			margin: 0;
+			padding: 0;
+			padding-bottom: 15px;
+		}
+		#sidebar-a {
+			float: right;
+			width: 280px;
+			line-height: 18px;
+		}
+		#sidebar-a .padding {
+			padding: 25px;
+		}
+		#content {
+			margin-right: 280px;
+			line-height: 18px;
+		}
+		#content .padding {	
+			padding: 25px;
+		} 
+	    #auto {
+
+	    	width:760px;
+	    	margin:auto;
+	    }
+	    #main-nav { 
+	    	height: 50px; 
+	    	padding-left: 11px; 
+	    	overflow: hidden; 
+	    }
+         
+        #main-nav ul {
+            margin: 0;
+            padding: 0;
+        } 
+        #main-nav li {
+            float: left;
+        } 
+
+        #main-nav li a {
+        	display: block;
+        	height: 0px !important;
+        	height /**/:50px; /* IE 5/Win hack */ 
+        	padding: 50px 0 0 0;
+        	overflow: hidden;
+        	background-repeat: no-repeat;
+        } 
+
+        #main-nav li a:hover {
+        	background-position: 0 -50px;
+        } 
+        #main-nav li#about,
+        #main-nav li#about a { 
+        	width: 71px; 
+        	background-image: 
+        	url(../images/nav/about.gif); 
+        }
+        #main-nav li#services,
+        #main-nav li#services a {
+            width: 84px; 
+            background-image: 
+            url(../images/nav/services.gif); 
+        }
+        #main-nav li#portfolio,
+        #main-nav li#portfolio a {
+        	width: 95px; 
+        	background-image: 
+        	url(../images/nav/portfolio.gif); 
+        }
+        #main-nav li#contact,
+        #main-nav li#contact a { 
+        	width: 106px; 
+        	background-image: 
+        	url(../images/nav/contact.gif);
+        } 
+
+	</style>
+</head>
+<body>
+	<!-- html -->
+	<div id="auto">
+	    <div id="main-nav">
+			<ul class=“hidden”>
+			<li id="about"><a href="http://css.jorux.com/wp-admin/post.php#" >About</a></li>
+			<li id="services"><a href="http://css.jorux.com/wp-admin/post.php#" >Services</a></li>
+			<li id="portfolio"><a href="http://css.jorux.com/wp-admin/post.php#" >Portfolio</a></li>
+			<li id="contact"><a href="http://css.jorux.com/wp-admin/post.php#" >Contact Us</a></li>
+			</ul>
+
+		</div>
+	    
+	    <div id="header">
+			<h1><img src="general/logo_enlighten.png" width="236" height="36" alt="Enlighten Designs" border="0" /></h1>
+	    </div> 
+	    
+	    <div id="sidebar-a">
+	    	<div class="padding">
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam gravida enim ut risus. 
+			Praesent sapien purus, ultrices a, varius ac, suscipit ut, enim. Maecenas in lectus. 
+			Donec in sapien in nibh rutrum gravida. Sed ut mauris. Fusce malesuada enim vitae lacus 
+			euismod vulputate. Nullam rhoncus mauris ac metus. Maecenas vulputate aliquam odio. 
+			Duis scelerisque justo a pede. Nam augue lorem, semper at, porta eget, placerat eget, 
+			purus. Suspendisse mattis nunc vestibulum ligula. In hac habitasse platea dictumst.
+	        </div>
+	    </div>
+	    
+	    <div id="content">
+			<h2><img src="headings/about.png" width="100" height="30" alt="About" /></h2>
+			<p><strong>Enlighten Designs</strong> is an Internet solutions provider that specialises in 
+			front and back end development. To view some of the web sites we have created view our 
+			portfolio.</p>
+			<p>We are currently undergoing a 'face lift', so if you have any questions or would 
+			like more information about the services we provide please feel free to contact us.</p>
+			<h2><img src="headings/contact.png" width="300" height="30" alt="Contact Us" /></h2>
+			<p>Phone:   (07) 853 6060<br />
+			Fax:   (07) 853 60603br /><br/>
+			Email:   <a href="mailto:info@enlighten.co.nz" >info@enlighten.co.nz</a><br />
+			P.O Box:   14159, Hamilton, New Zealand</p>
+			<p><a href="http://css.jorux.com/wp-admin/post.php#" >More contact information…</a></p>
+
+		</div>
+		
+		<div id="footer">
+			<div id="altnav">
+				<a href="http://css.jorux.com/wp-admin/post.php#" >About</a> - 
+				<a href="http://css.jorux.com/wp-admin/post.php#" >Services</a> - 
+				<a href="http://css.jorux.com/wp-admin/post.php#" >Portfolio</a> - 
+				<a href="http://css.jorux.com/wp-admin/post.php#" >Contact Us</a> - 
+				<a href="http://css.jorux.com/wp-admin/post.php#" >Terms of Trade</a>
+			</div>
+			Copyright &copy; Enlighten Designs<br/>
+			Powered by <a href="http://www.enlightenhosting.com/" >Enlighten Hosting</a> and
+			<a href="http://www.vadmin.co.nz/" >Vadmin 3.0 CMS</a>
+
+	    </div> 	
+	</div>    
+</body>
+</html>
